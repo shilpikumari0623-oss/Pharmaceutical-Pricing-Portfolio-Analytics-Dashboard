@@ -44,20 +44,19 @@ Pharmaceutical-Pricing-Portfolio-Analytics/
 ├── 📄 README.md
 │
 ├── 📊 Dashboard/
-│   ├── Pharmaceutical_Pricing_Portfolio_Dashboard.pbix
+│   ├── Pharmaceutical Pricing Portfolio Dashboard.pbix
 │
 ├── 📁 Data/
 │   ├── indian_pharmaceutical_products_clean.csv
-│   └── Processed_Indian_Pharmaceutical_Data.xlsx
 │
 ├── 🧮 SQL/
-│   └── Pharmaceutical_Portfolio_Analysis.sql
+│   └── Pharmaceutical Pricing Portfolio Analysis.sql
 │
-├── 📈 Excel_Analysis/
-│   └── Pharmaceutical_Data_Analysis.xlsx
+├── 📈 Excel Analysis/
+│   └── Pharmaceutical_Portfolio_Analysis.xlsx
 │
-├── 💡 Business_Recommendations/
-│   └── Business_Recommendations.xlsx
+├── 💡 Business Recommendations/
+│   └── Business Recommendations & Strategic Actions.xlsx
 │
 └── 🖼️ Screenshots/
     ├── 01_Executive_Overview.png
