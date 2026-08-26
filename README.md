@@ -200,3 +200,14 @@ If you have any feedback, suggestions, or would like to connect, I'd be happy to
 
 💼 **LinkedIn:** **[Shilpi Kumari](https://www.linkedin.com/in/shilpi-kumari-2ab98a220/)**
 
+---
+
+# 📚 Dataset Credit
+
+This project uses the **Indian Pharmaceutical Products** dataset created by **Marília Prata** and made available through Kaggle.
+
+🔗 **Dataset:** **[Indian Pharmaceutical Products – Kaggle](https://www.kaggle.com/code/mpwolke/india-pharmacy-of-the-world/input)**
+
+The dataset is used strictly for **educational, learning, and portfolio purposes**. All rights and credit belong to the original author.
+
+
