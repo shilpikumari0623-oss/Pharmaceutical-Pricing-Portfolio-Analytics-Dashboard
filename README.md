@@ -30,9 +30,10 @@ The goal isn't just to report numbers — it's to answer the questions a pricing
 
 | Layer | Tool | Purpose |
 |---|---|---|
-| **Data Analysis** | MySQL | 25 business-question-driven queries: aggregation, CTEs, window functions, subqueries |
-| **Visualization** | Power BI | 4-page interactive executive dashboard with cross-filtering |
-| **Stakeholder Deliverable** | Excel | Structured recommendation framework (finding → implication → action → impact) |
+| **Data Analysis** | MySQL | Business-question-driven SQL analysis using aggregation, CTEs, subqueries, and window functions |
+| **Visualization** | Power BI | 4-page interactive dashboard with KPI reporting, slicers, and cross-filtering |
+| **Data Analysis & Validation** | Excel | Data profiling, quality checks, exploratory analysis, and validation |
+| **Business Recommendations** | Excel | Structured finding → implication → recommendation → impact framework |
 
 ---
 
@@ -69,65 +70,100 @@ Pharmaceutical-Pricing-Portfolio-Analytics/
 
 ## 📊 Dashboard Walkthrough
 
-> Four pages, four angles on the same portfolio — built so a stakeholder can go from "what's the big picture?" to "what do I do about this ingredient?" in under a minute.
+>  **Four pages, four perspectives on the same pharmaceutical portfolio — designed to move from executive overview to pricing, portfolio, therapeutic, and ingredient-level analysis.**
 
 ### 1️⃣ Executive Overview
 <img width="872" height="668" alt="01_Executive_Overview" src="https://github.com/user-attachments/assets/f255c6f4-604a-4a20-aa63-cee1f7f238bc" />
 
 
-The landing page for leadership — portfolio size, health, and concentration at a glance.
+The executive landing page provides a high-level view of **portfolio size, lifecycle health, therapeutic concentration, and dosage-form mix**.
 
-- **253,973 products** total → **246K active (96.9%)**, only **3.11% discontinued** — a healthy, stable portfolio
-- **8,000+ manufacturers** contribute to the portfolio
-- Therapeutic concentration is stark: **"Other" (144K) and antibiotics (31K)** dominate, while classes like antidepressant and bronchodilator sit near 2K each
-- **Tablets** are the runaway leader in dosage form, dwarfing injections, capsules, and syrups combined
+- **253,973 products** across the portfolio
+- **246K+ active products**, representing the majority of the portfolio
+- **8,000+ manufacturers** contribute to the overall product portfolio
+- **Other** and **Antibiotics** represent major therapeutic categories by product volume
+- **Tablets** are the dominant dosage form
 
-**So what:** the portfolio is broad but not balanced — a small number of categories and one dosage form carry most of the volume.
+### 📌 Business Insights & Recommendations
+
+**• Portfolio is concentrated across a few key therapeutic classes, with tablets representing the dominant dosage segment.**
+
+**• Solutions and injections command higher average prices, highlighting potential premium-segment opportunities.**
+
+**• Focus portfolio optimization on high-volume categories while evaluating premium segments for pricing and expansion opportunities.**
+
+---
 
 ### 2️⃣ Pricing & Portfolio Analysis
 <img width="826" height="671" alt="02_Pricing_Portfolio_Analysis" src="https://github.com/user-attachments/assets/4e6b987b-fbaa-4d19-9a5e-ea48b8299e0e" />
 
 
-Where pricing strategy lives — averages, bands, and manufacturer-level pricing position.
+This dashboard focuses on **product pricing, price bands, dosage-form pricing, manufacturer pricing, and premium-product segments**.
 
-- Average product price: **₹270.53**, ranging from **₹0 to ₹436K**
-- **9.14%** of products qualify as premium-priced
-- **Solutions and injections price well above tablets and syrups** — form drives value, not just category
-- Most products cluster in the **₹0–₹100 and ₹101–₹500 bands**, with a long, thin tail of high-value outliers
-- **Roche, Astellas, and BMS India** anchor the highest average manufacturer pricing
+- Average product price: **₹270.53**
+- Product prices range from **₹0 to ₹436K**
+- Premium-priced products represent approximately **9.14%** of the portfolio
+- **Solutions and injections** have significantly higher average prices than tablets
+- Most products fall within the lower price bands
+- A small number of high-value products create a long pricing tail
 
-**So what:** pricing strategy today looks fairly uniform across a portfolio that is clearly *not* uniform in value — that's margin sitting on the table.
+### 📌 Business Insights & Recommendations
+
+**• Pricing varies significantly across dosage forms, with solutions and injections positioned at higher average price points.**
+
+**• Most products remain concentrated in lower price bands, while a smaller premium segment creates an opportunity for focused pricing review.**
+
+**• Use differentiated pricing strategies by dosage form and price segment to improve portfolio positioning and pricing governance.**
+
+---
 
 ### 3️⃣ Portfolio & Therapeutic Analysis
 <img width="765" height="673" alt="03_Portfolio_Therapeutic_Analysis" src="https://github.com/user-attachments/assets/b845b6c5-1f4c-408b-bd5c-528cf802d4a5" />
 
 
-Where manufacturer strategy and category strategy meet.
+This dashboard evaluates **manufacturer portfolio scale, therapeutic coverage, product complexity, and portfolio concentration**.
 
-- **11 therapeutic classes**, averaging **33.21 products per manufacturer**
-- **Sun Pharmaceutical, Cipla, Intas, Torrent, Alkem, and Abbott** lead the market by portfolio size (by volume — a different set of manufacturers leads on *price*, seen on Page 2)
-- Roughly **56% of products carry a single active ingredient**, and most of the rest carry two — very few go beyond that
+- Portfolio covers **11 therapeutic classes**
+- Average products per manufacturer: **33.21**
+- **Sun Pharmaceutical, Cipla, Intas, Torrent, Alkem, and Abbott** lead portfolio volume
+- Single-ingredient products represent the largest product group
+- Two-ingredient products form the next major segment
 
-**So what:** portfolio breadth (volume) and pricing power (value) are led by two different groups of manufacturers — worth tracking separately in any manufacturer review.
+### 📌 Business Insights & Recommendations
+
+**• A relatively small group of manufacturers accounts for a significant share of the overall product portfolio.**
+
+**• Manufacturer scale varies across therapeutic coverage and product complexity, creating different portfolio positioning patterns.**
+
+**• Benchmark manufacturers using both portfolio breadth and pricing position rather than product volume alone.**
+
+---
 
 ### 4️⃣ Ingredient & Product Analysis
 <img width="749" height="673" alt="04_Ingredient_Product_Analysis" src="https://github.com/user-attachments/assets/66d186e8-a62c-4d81-92cc-d4c6fc618bc2" />
 
 
-The molecule-level view — formulation complexity and ingredient concentration.
+This dashboard provides a deeper view of **active ingredients, ingredient complexity, dosage forms, and product representation**.
 
-- **2,000+ unique active ingredients** across the portfolio
-- Average of **1.44 active ingredients per product**; **44.18% of products are multi-ingredient combinations**
-- **Cefixime, Domperidone, Aceclofenac, and Amoxycillin** are the most represented ingredients — high penetration across many SKUs
-- Confirms the pricing pattern from Page 2: **solution and injection forms price highest**, tablets and syrups lowest
+- **2,000+ unique active ingredients**
+- Average active ingredients per product: **1.44**
+- **44.18%** of products contain multiple active ingredients
+- **Cefixime, Domperidone, Aceclofenac, and Amoxycillin** are among the most represented active ingredients
+- Solutions and injections continue to show higher average pricing
 
-**So what:** a handful of active ingredients show up across a disproportionate share of products — a strong starting point for rationalization or differentiation review.
+### 📌 Business Insights & Recommendations
+
+**• A relatively small group of active ingredients has high representation across the product portfolio.**
+
+**• Multi-ingredient products represent a significant portion of the portfolio, indicating meaningful formulation complexity.**
+
+**• Review high-penetration ingredients for product overlap, differentiation, and potential portfolio rationalization.**
 
 ---
 
 ## 🧮 SQL Analysis
 
-All 25 queries live in [`sql/pharmaceutical_pricing_portfolio_queries.sql`](). Each one is framed the way a stakeholder would ask it — with a **Business Question** and **Business Purpose** documented directly above the query.
+The SQL layer contains 25 business-question-driven queries, with each query structured around a specific analytical requirement and business purpose.
 
 | Category | Queries | Business Focus | SQL Techniques |
 |---|---|---|---|
@@ -137,23 +173,21 @@ All 25 queries live in [`sql/pharmaceutical_pricing_portfolio_queries.sql`](). E
 | **Manufacturer Benchmarking** | Q17–Q22 | Therapeutic coverage, portfolio-vs-pricing view, benchmark vs. overall average, ranking, top 3 per class | Correlated **subqueries**, **CTEs**, `RANK() OVER (PARTITION BY ...)` |
 | **Executive & Advanced Analytics** | Q23–Q25 | Above-average priced products, therapeutic pricing rank, one-shot executive KPI summary | Subqueries, window functions, conditional aggregation (`SUM(CASE WHEN...)`) |
 
-This layer is designed to stand on its own — a stakeholder without Power BI access can run any query directly and get an answer with business context attached, not just a raw result set.
+The SQL layer is designed to stand independently from the Power BI dashboard, allowing stakeholders to explore individual business questions directly from the analytical layer.
 
 ---
 
 ## 💡 Key Insights
 
-- **Concentration risk, not diversification.** A handful of therapeutic classes ("Other," antibiotics, analgesics) and one dosage form (tablets) drive most of the portfolio's volume.
-- **Pricing is form-driven, not uniformly applied.** Solutions and injections consistently command higher prices than tablets and syrups — the data supports a differentiated, not blanket, pricing approach.
-- **Two different manufacturer stories.** The manufacturers with the *largest* portfolios (Sun Pharma, Cipla, Intas) are not the same manufacturers with the *highest* average pricing (Roche, Astellas, BMS) — volume leadership and value leadership are separate conversations.
-- **High ingredient penetration.** A small set of active ingredients (Cefixime, Domperidone, Aceclofenac, Amoxycillin) appear across a large share of products — a natural starting point for rationalization.
-- **A stable, low-risk base.** With under 3.5% of the portfolio discontinued, the core business is healthy; the opportunity is optimization, not damage control.
+- **Portfolio concentration:** A few therapeutic classes and tablets account for a significant share of overall product representation.
+- **Pricing differentiation:** Solutions and injections command higher average prices than tablets and syrups, supporting a differentiated pricing perspective.
+- **Separate manufacturer stories:** Manufacturers with the largest portfolios are not necessarily the same manufacturers with the highest average pricing.
+- **Ingredient concentration:** A small group of active ingredients appears across a large number of products, creating opportunities for overlap and differentiation review.
+- **Stable portfolio base:** The large proportion of active products indicates that the primary opportunity is portfolio optimization rather than broad lifecycle remediation.
 
 ---
 
 ## ✅ Business Recommendations
-
-Full detail (with implications and expected impact) is in [`reports/Business_Recommendations_Strategic_Actions.xlsx`](reports/Business_Recommendations_Strategic_Actions.xlsx). Summary for the meeting:
 
 | Business Area | Key Finding | Recommendation | Expected Impact |
 |---|---|---|---|
@@ -162,28 +196,30 @@ Full detail (with implications and expected impact) is in [`reports/Business_Rec
 | 💎 **Price Segmentation** | Wide price range with a small high-value tail | Monitor by price band; review high-value segment governance | Stronger pricing oversight, visibility into high-value SKUs |
 | 🏭 **Manufacturer Portfolio** | A small group of manufacturers drives a large share of products | Prioritize top manufacturers for strategic portfolio reviews | Sharper strategic focus and prioritization |
 | 🧬 **Active Ingredient Portfolio** | Certain ingredients show very high penetration across products | Review high-penetration ingredients for overlap and differentiation | Reduced redundancy, better product planning |
-| 🔄 **Lifecycle Management** | Active and discontinued products span all categories | Analyze discontinuation patterns by class, form, and price band | More focused active portfolio, better lifecycle planning |
+| 🔄 **Lifecycle Management** | Active and discontinued products span all categories | Analyse discontinuation patterns by class, form, and price band | More focused active portfolio, better lifecycle planning |
 | 📊 **Portfolio Monitoring** | Multiple portfolio dimensions can be tracked together | Use this dashboard as a recurring portfolio review tool | Faster decisions, stronger ongoing governance |
 
 ---
 
 ## 🚀 How to Reproduce This Analysis
 
-1. **Load the data** — import the pharmaceutical product dataset into a MySQL instance as `pharmaceutical_products`.
-2. **Run the SQL layer** — execute [`sql/pharmaceutical_pricing_portfolio_queries.sql`](sql/pharmaceutical_pricing_portfolio_queries.sql) top to bottom, or query-by-query to explore individual business questions.
-3. **Build or refresh the dashboard** — connect Power BI to the same source table and reproduce the four pages shown in `screenshots/`, or open the exported [dashboard PDF](dashboard/Pharmaceutical_Pricing_Portfolio_Analytics_Dashboard.pdf) directly.
-4. **Present with the recommendations framework** — use [`reports/Business_Recommendations_Strategic_Actions.xlsx`](reports/Business_Recommendations_Strategic_Actions.xlsx) as the narrative layer for the stakeholder meeting: finding → implication → recommendation → impact.
-
+1. **Load the data** — Import the pharmaceutical product dataset into MySQL.
+2. **Run the SQL layer** — Execute the 25 documented queries to reproduce the portfolio, pricing, manufacturer, therapeutic, and ingredient analysis.
+3. **Validate the analysis** — Use the Excel analysis file for data profiling, quality checks, and exploratory validation.
+4. **Build or refresh the Power BI dashboard** — Connect Power BI to the analytical dataset and reproduce the four dashboard pages.
+5. **Apply the recommendations framework** — Use the business recommendations file to translate findings into stakeholder-focused actions and expected impact.
 ---
 
 ## 📁 Files in This Repository
 
 | File | Description |
-|---|---|
-| [`sql/pharmaceutical_pricing_portfolio_queries.sql`](sql/pharmaceutical_pricing_portfolio_queries.sql) | 25 documented SQL queries covering portfolio, pricing, ingredient, and manufacturer analysis |
-| [`dashboard/Pharmaceutical_Pricing_Portfolio_Analytics_Dashboard.pdf`](dashboard/Pharmaceutical_Pricing_Portfolio_Analytics_Dashboard.pdf) | Full 4-page Power BI dashboard export |
-| [`reports/Business_Recommendations_Strategic_Actions.xlsx`](reports/Business_Recommendations_Strategic_Actions.xlsx) | Stakeholder-ready recommendation framework |
-| `screenshots/` | Individual dashboard pages, referenced throughout this README |
+|------|-------------|
+| `SQL/Pharmaceutical Pricing Portfolio Analysis.sql` | 25 documented SQL queries covering portfolio, pricing, ingredient, and manufacturer analysis |
+| `Dashboard/Pharmaceutical Pricing Portfolio Dashboard.pbix` | Interactive 4-page Power BI dashboard |
+| `Data/indian_pharmaceutical_products_clean.csv` | Clean pharmaceutical product dataset used for analysis |
+| `Excel Analysis/Pharmaceutical_Portfolio_Analysis.xlsx` | Data profiling, quality checks, and exploratory analysis |
+| `Business Recommendations/Business Recommendations & Strategic Actions.xlsx` | Stakeholder-focused recommendations and strategic actions |
+| `Screenshots/` | Individual dashboard screenshots for project documentation and preview |
 
 ---
 
