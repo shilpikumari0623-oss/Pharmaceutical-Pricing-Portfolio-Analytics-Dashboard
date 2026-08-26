@@ -39,20 +39,28 @@ The goal isn't just to report numbers — it's to answer the questions a pricing
 ## 🗂️ Repository Structure
 
 ```
-pharmaceutical-pricing-portfolio-analytics/
+Pharmaceutical-Pricing-Portfolio-Analytics/
 │
-├── README.md
+├── 📄 README.md
 │
-├── sql/
-│   └── pharmaceutical_pricing_portfolio_queries.sql     # 25 business-question SQL queries
+├── 📊 Dashboard/
+│   ├── Pharmaceutical_Pricing_Portfolio_Dashboard.pbix
+│   └── Dashboard_Preview.png
 │
-├── dashboard/
-│   └── Pharmaceutical_Pricing_Portfolio_Analytics_Dashboard.pdf   # Full 4-page Power BI export
+├── 📁 Data/
+│   ├── indian_pharmaceutical_products_clean.csv
+│   └── Processed_Indian_Pharmaceutical_Data.xlsx
 │
-├── reports/
-│   └── Business_Recommendations_Strategic_Actions.xlsx   # Stakeholder recommendation framework
+├── 🧮 SQL/
+│   └── Pharmaceutical_Portfolio_Analysis.sql
 │
-└── screenshots/
+├── 📈 Excel_Analysis/
+│   └── Pharmaceutical_Data_Analysis.xlsx
+│
+├── 💡 Business_Recommendations/
+│   └── Business_Recommendations.xlsx
+│
+└── 🖼️ Screenshots/
     ├── 01_Executive_Overview.png
     ├── 02_Pricing_Portfolio_Analysis.png
     ├── 03_Portfolio_Therapeutic_Analysis.png
