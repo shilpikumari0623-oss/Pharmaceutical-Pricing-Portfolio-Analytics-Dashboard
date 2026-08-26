@@ -129,7 +129,7 @@ The molecule-level view — formulation complexity and ingredient concentration.
 
 ## 🧮 SQL Analysis
 
-All 25 queries live in [`sql/pharmaceutical_pricing_portfolio_queries.sql`](sql/pharmaceutical_pricing_portfolio_queries.sql). Each one is framed the way a stakeholder would ask it — with a **Business Question** and **Business Purpose** documented directly above the query.
+All 25 queries live in [`sql/pharmaceutical_pricing_portfolio_queries.sql`](). Each one is framed the way a stakeholder would ask it — with a **Business Question** and **Business Purpose** documented directly above the query.
 
 | Category | Queries | Business Focus | SQL Techniques |
 |---|---|---|---|
