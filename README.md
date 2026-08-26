@@ -45,7 +45,6 @@ Pharmaceutical-Pricing-Portfolio-Analytics/
 │
 ├── 📊 Dashboard/
 │   ├── Pharmaceutical_Pricing_Portfolio_Dashboard.pbix
-│   └── Dashboard_Preview.png
 │
 ├── 📁 Data/
 │   ├── indian_pharmaceutical_products_clean.csv
