@@ -188,10 +188,15 @@ Full detail (with implications and expected impact) is in [`reports/Business_Rec
 
 ---
 
-## 👤 About This Project
+# 👩‍💻 About Me
 
-Prepared as a portfolio analytics case study — from raw data to SQL analysis to an executive-ready Power BI dashboard and a structured business recommendation deck.
+I believe data becomes valuable only when it helps answer real business questions. With a professional background in the pharmaceutical and life sciences industry, I've developed a strong understanding of commercial operations, sales performance, and business reporting. Today, I'm channeling that domain knowledge into analytics by building practical, business-focused solutions using **Power BI, SQL, Excel, and Python**.
 
-**Analyst:** *[Your Name]* · *[LinkedIn]* · *[Email]*
+This portfolio showcases projects inspired by real business scenarios, where the focus goes beyond creating dashboards to uncovering insights, solving problems, and supporting data-driven decision-making. Every project reflects my approach to combining business understanding with analytical thinking to deliver meaningful outcomes.
 
-> 📌 **Note for reviewers:** this README and dashboard are designed to be presented directly to stakeholders — every chart maps to a business question, and every insight maps to a recommendation with a stated expected impact.
+If you have any feedback, suggestions, or would like to connect, I'd be happy to hear from you.
+
+📧 **Email:** **[Shilpikumari0623@gmail.com](mailto:Shilpikumari0623@gmail.com)**
+
+💼 **LinkedIn:** **[Shilpi Kumari](https://www.linkedin.com/in/shilpi-kumari-2ab98a220/)**
+
